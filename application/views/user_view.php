@@ -10,14 +10,14 @@
     
     <?php
 
-        echo $results;
+        // echo $results;
     
-        // foreach($results as $object)
-        // {
-        //     echo $object->id        . "<br/>";
-        //     echo $object->username  . "<br/>";
-        //     echo $object->password  . "<br/>";
-        // }
+        foreach($results as $object)
+        {
+            echo $object->id        . "<br/>";
+            echo $object->username  . "<br/>";
+            echo $object->password  . "<br/>";
+        }
 
     ?>  
 
