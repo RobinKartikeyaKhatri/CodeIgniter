@@ -6,8 +6,12 @@ class User_model extends CI_Model
     {
         // Query to communicate with database
 
-        $query = $this->db->get('users');
-        return $query->result();
+        $query = $this->db->query("SELECT * FROM users");
+        // return $query->num_rows();
+        return $query->num_fields();
+
+        // $query = $this->db->get('users');
+        // return $query->result();
 
         // $config['hostname']     = 'localhost';
         // $config['username']     = 'root';
